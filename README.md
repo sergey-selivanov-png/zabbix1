@@ -2,7 +2,7 @@
 
 ##Задание 1
 
-```bash
+```
 sudo -s
 wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_6.0+ubuntu24.04_all.deb
 dpkg -i zabbix-release_latest_6.0+ubuntu24.04_all.deb
@@ -15,5 +15,23 @@ sed -i 's/# DBPassword=/DBPassword=123456789/g' /etc/zabbix/zabbix_server.conf
 systemctl restart zabbix-server zabbix-agent apache2
 systemctl enable zabbix-server zabbix-agent apache2
 ```
+
 ![Скриншот проекта1](https://github.com/sergey-selivanov-png/zabbix1/blob/main/images/я1.jpg)
+
+##Задание 2
+
+```
+sudo -s
+wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_6.0+ubuntu24.04_all.deb
+dpkg -i zabbix-release_latest_6.0+ubuntu24.04_all.deb
+apt update
+apt install zabbix-agent
+systemctl restart zabbix-agent
+systemctl enable zabbix-agent
+
+```
+
+![Скриншот проекта2](https://github.com/sergey-selivanov-png/zabbix1/blob/main/images/я2.jpg)
+![Скриншот проекта3](https://github.com/sergey-selivanov-png/zabbix1/blob/main/images/я3.jpg)
+![Скриншот проекта4](https://github.com/sergey-selivanov-png/zabbix1/blob/main/images/я4.jpg)
 
